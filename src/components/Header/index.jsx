@@ -1,22 +1,32 @@
 import React from "react";
+import SvgIcon from "@material-ui/core/SvgIcon";
+import { Bell } from "react-feather";
+import Avatar from "@material-ui/core/Avatar";
 
-import { Container, Header, Toobar } from "./styles";
+import { Container, Toobar } from "./styles";
 
 function Header() {
     return (
         <Container>
-            <Header>
+            <header>
                 <Toobar>
                     <div>
-                        <span>Starsbook</span>
+                        <h1>Starsbook</h1>
                     </div>
-                    <div>
+                    <div className="user-section">
                         <button>Novo Post</button>
-                        <span>img1</span>
-                        <span>img2</span>
+                        <SvgIcon className="bell">
+                            <Bell style={{ fill: "#189300" }} />
+                        </SvgIcon>
+                        <Avatar
+                            style={{ color: "#189300" }}
+                            className="avatar"
+                            alt="Remy Sharp"
+                            src="/static/images/avatar/1.jpg"
+                        />
                     </div>
                 </Toobar>
-            </Header>
+            </header>
         </Container>
     );
 }

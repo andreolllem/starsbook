@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 100%100%;
 `;
 
 export const Header = styled.div`
@@ -25,18 +24,7 @@ export const Toobar = styled.div`
 export const Main = styled.div`
     height: 100vh;
     display: flex;
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
-`;
-
-export const Navbar = styled.div`
-    width: 350px;
-    background: var(--primary);
-    padding: 24px;
-`;
-
-export const Feed = styled.div`
-    width: 100%;
-    background: var(--primary);
     padding: 24px;
 `;
