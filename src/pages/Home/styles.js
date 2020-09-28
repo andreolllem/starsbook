@@ -10,17 +10,6 @@ export const Header = styled.div`
     position: fixed;
 `;
 
-export const Toobar = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-
-    span {
-        padding: 15px;
-    }
-`;
-
 export const Main = styled.div`
     height: 100vh;
     display: flex;

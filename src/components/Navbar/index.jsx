@@ -13,7 +13,17 @@ const useStyles = makeStyles({
     },
 });
 
-const list = [{ id: 1, nome: "Carolina Minni" }];
+const list = [
+    {
+        id: 1,
+        user: {
+            nome: "Carolina Minni",
+            area: "Make and Hair",
+            ultimojob: "Elenven Inc.",
+            avatar: "/img/avatars/caro.jpg",
+        },
+    },
+];
 
 function Navbar() {
     const classes = useStyles();
@@ -24,13 +34,15 @@ function Navbar() {
                 <Avatar
                     className={classes.root}
                     style={{ color: "#189300" }}
-                    src="/broken-image.jpg"
+                    src="/img/avatars/caro.jpg"
                 />
                 <h3>Apresentação</h3>
                 <div>
                     {list.map((item) => (
-                        <ul key={item.id}>
-                            <li>Nome: {item.nome} </li>
+                        <ul key={item.id} user={item.user}>
+                            <li>Nome: {item.user.nome} </li>
+                            <li>Área de atuação: {item.user.area} </li>
+                            <li>Último Job: {item.user.ultimojob} </li>
                         </ul>
                     ))}
                 </div>

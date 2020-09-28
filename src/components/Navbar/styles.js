@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 350px;
-    padding: 24px;
+    width: 300px;
     margin-top: 64px;
+    position: fixed;
 `;
 
 export const Nav = styled.div`
-    padding: 16px;
-    width: 275px;
+    padding: 30px;
     background: var(--primary);
     border-radius: 6px;
 
@@ -18,7 +17,7 @@ export const Nav = styled.div`
     }
 
     li {
-        margin: 5px 0px 0;
+        margin: px 0px 0;
         font-weight: 250;
         list-style: none;
         font-size: 15px;

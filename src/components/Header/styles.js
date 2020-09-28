@@ -15,11 +15,12 @@ export const Toobar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 64px;
+    min-height: 34px;
+    border-bottom: 0.3px solid #3a3b3c;
 
     h1 {
         font-size: 30px;
-        padding: 24px;
+        padding: 15px;
         margin-left: 10px;
         color: var(--secondary);
         font-weight: 500;
@@ -48,7 +49,7 @@ export const Toobar = styled.div`
 
     button {
         outline: none;
-        border: 2px solid var(--secondary);
+        border: 1px solid var(--secondary);
         border-radius: 5px;
         padding: 5px 10px;
         cursor: pointer;
@@ -60,5 +61,70 @@ export const Toobar = styled.div`
             background: var(--secondary);
             color: #fff;
         }
+    }
+`;
+
+export const CardActionArea = styled.div`
+    margin: 8px 8px;
+    padding: 8px 8px;
+    background-color: var(--primary);
+
+    cursor: pointer;
+
+    div {
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        background: #3a3b3c;
+        border-radius: 6px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    hr {
+        width: 50%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    p {
+        font-size: 10px;
+        color: #777777;
+        margin-left: 60px;
+        margin-top: -100;
+        position: absolute;
+    }
+`;
+
+export const CardAction = styled.div`
+    margin: 8px 8px;
+    padding: 8px 8px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        background: #3a3b3c;
+        border-radius: 6px;
+    }
+
+    h1 {
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    hr {
+        width: 50%;
+        text-align: left;
+        margin-left: 0;
     }
 `;
